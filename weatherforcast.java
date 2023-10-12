@@ -10,15 +10,15 @@ import org.json.JSONObject;
 
 public class weatherforcast {
     public static void main(String[] args) {
-        String apiKey = "dc8d8b13124435d4dda20e70a85cfaa1"; // Replace with your OpenWeatherMap API key
+        String apiKey = "dc8d8b13124435d4dda20e70a85cfaa1"; 
         //Scanner sc=new Scanner(System.in);
         String city = "Delhi"; // Replace with the city you want to get weather data for
 
         try {
-            // Create a URL for the OpenWeatherMap API
+            
             String apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
 
-            // Send an HTTP GET request
+           
             URL url = new URL(apiUrl);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
